@@ -1,0 +1,22 @@
+{
+   "name": "smart-lights-server",
+   "version": "1.0.0",
+   "description": "",
+   "main": "src/index.js",
+   "scripts": {
+      "start": "concurrently --kill-others \"nodemon src/index.js\" \"ssh -o ServerAliveInterval=60 -R smart-lights:80:localhost:3001 serveo.net\" ",
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "author": "Timothy Porter <tmporter42@gmail.com> (github.com/tmporter)",
+   "license": "ISC",
+   "dependencies": {
+      "concurrently": "^3.6.0",
+      "express": "^4.16.3",
+      "morgan": "^1.9.0",
+      "ngrok": "^3.0.1",
+      "node-fetch": "^2.1.2"
+   },
+   "devDependencies": {
+      "nodemon": "^1.17.5"
+   }
+}

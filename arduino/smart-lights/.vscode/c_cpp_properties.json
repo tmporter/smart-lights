@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "D:\\Program Files\\Arduino\\libraries\\QueueArray",
+                "${workspaceRoot}",
+                "D:\\Program Files\\Arduino\\hardware\\tools",
+                "D:\\Program Files\\Arduino\\libraries",
+                "C:\\Users\\Timothy\\Documents\\Arduino\\hardware\\tools",
+                "C:\\Users\\Timothy\\Documents\\Arduino\\libraries"
+            ],
+            "browse": {
+                "path": [
+                    "D:\\Program Files\\Arduino\\libraries\\QueueArray",
+                    "${workspaceRoot}",
+                    "D:\\Program Files\\Arduino\\hardware\\tools",
+                    "D:\\Program Files\\Arduino\\libraries",
+                    "C:\\Users\\Timothy\\Documents\\Arduino\\hardware\\tools",
+                    "C:\\Users\\Timothy\\Documents\\Arduino\\libraries"
+                ],
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "intelliSenseMode": "clang-x64",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
