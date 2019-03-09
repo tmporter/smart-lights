@@ -1,0 +1,1 @@
+cd /d D:\Dev\smart-lights-3\smart-lights-ui && npm start
