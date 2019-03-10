@@ -16,8 +16,9 @@ FASTLED_USING_NAMESPACE
 #define NUM_LEDS 50
 CRGB leds[NUM_LEDS];
 
-#define BRIGHTNESS 96
 #define FRAMES_PER_SECOND 120
+
+int BRIGHTNESS = 127;
 
 void setup()
 {
@@ -94,6 +95,13 @@ void handleMessage(String message)
       SerialUSB.println(message);
       SerialUSB.println(strtol(message.c_str(), NULL, 0));
       setColor(strtol(message.c_str(), NULL, 0));
+   }
+
+   if (message.startsWith("b")) {
+      message = message.substring(1);
+
+      BRIGHTNESS = 255 * strtol(message.c_str(), NULL, 0) / 100;
+      FastLED.setBrightness(BRIGHTNESS);
    }
 }
 
